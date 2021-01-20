@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hanna.books.models.Book;
 import com.hanna.books.repositories.BookRepository;
 
-
 @RestController
+@RequestMapping("/rest")
 public class BookController {
 
     @Autowired
